@@ -1,0 +1,92 @@
+
+.feature{
+    width: 100%;
+    padding: 8rem 0;
+    background-color: var(--background);
+    clip-path: polygon(0 0, 100% 8%,100% 100%, 0% 93%);
+}
+
+.feature .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.green{
+    color: var(--primary);
+}
+
+.red{
+    color: #ff0000;
+}
+
+.feature .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.feature .left p{
+    margin: 1.5rem 0;
+}
+
+.feature .left .btn{
+    align-self: flex-start;
+}
+
+.feature .right{
+    display: flex;
+    
+}
+
+.feature .right .top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.feature .right .top .coin{
+    display: flex;
+    flex-direction: column;
+    padding: 12px 22px;
+    margin: .4rem;
+    width: 170px;
+    height: 170px;
+    border-radius: 24px;
+    border: 1px solid #d3d3d3;
+    box-shadow: rgb(0 0 0 /12%) 0px 8px 24px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.feature .right .top .coin:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+}
+.feature .coin:hover{
+    box-decoration-break: rgb(0 0 0/ 20%) 0px 8px 24px;
+}
+.feature img{
+    width: 50px;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 948px) {
+    .feature .container{
+        grid-template-columns: 1fr;
+    }
+
+    .feature .left .btn{
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 578px) {
+    .feature .container .right .coin{
+        width: 100%;
+    }
+}
